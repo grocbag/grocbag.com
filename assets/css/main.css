@@ -405,7 +405,9 @@ header {
 
 /*----------  02.1 Header top  ----------*/
 .header-top {
-  background-color: #f5f5f5; }
+  background-color: #2a82bc;
+  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: 3px;}
 
 /* language currency dropdown */
 .lang-currency-dropdown ul li {
@@ -450,7 +452,7 @@ header {
     margin-left: 0; }
   .header-top-menu ul li a {
     display: block;
-    color: #777; }
+    color: #fff; }
     .header-top-menu ul li a:hover {
       color: #80bb01; }
 
@@ -573,7 +575,7 @@ header {
     top: 5px;
     background: none;
     border: none;
-    background-color: #80bb01;
+    background-color: #f5a020;
     color: #ffffff;
     width: 40px;
     height: 40px;
