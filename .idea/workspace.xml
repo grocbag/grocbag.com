@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1c163d4-ae4f-4cd1-8c05-720edb8b4d1a" name="Default" comment="" />
+    <list default="true" id="f1c163d4-ae4f-4cd1-8c05-720edb8b4d1a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/sliders/home1-slider1.jpg" afterPath="$PROJECT_DIR$/assets/images/sliders/home1-slider1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/sliders/home1-slider2.jpg" afterPath="$PROJECT_DIR$/assets/images/sliders/home1-slider2.jpg" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
