@@ -1467,7 +1467,11 @@ a.single-sale-add-to-cart-btn {
 /*----------  04.1 Hero One ----------*/
 .hero-slider-one .hero-slider-item {
   padding-top: 245px;
-  padding-bottom: 265px; }
+  padding-bottom: 265px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;	
+}
   @media only screen and (min-width: 1200px) and (max-width: 1499px) {
     .hero-slider-one .hero-slider-item {
       padding-top: 80px;
