@@ -405,7 +405,9 @@ header {
 
 /*----------  02.1 Header top  ----------*/
 .header-top {
-  background-color: #f5f5f5; }
+  background-color: #2a82bc;
+  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: 3px;}
 
 /* language currency dropdown */
 .lang-currency-dropdown ul li {
