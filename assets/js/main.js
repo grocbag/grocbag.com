@@ -72,10 +72,10 @@
     });
     
 	heroSlider.slick({
-		arrows: true,
+		arrows: false,
 		autoplay: true,
 		autoplaySpeed: 8000,
-		dots: false,
+		dots: true,
 		pauseOnFocus: false,
 		pauseOnHover: false,
 		fade: true,
