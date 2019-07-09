@@ -66,6 +66,11 @@
 	Hero slider one active
 	-----------------------------------*/
 	var heroSlider = $('.hero-slider-one');
+	
+	heroSlider. on( 'touchstart', e => {
+        heroSlider. slick( 'slickPlay');
+    });
+    
 	heroSlider.slick({
 		arrows: true,
 		autoplay: true,
