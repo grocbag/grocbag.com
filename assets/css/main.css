@@ -1599,7 +1599,7 @@ a.single-sale-add-to-cart-btn {
      display : inline-block;
 }
 
-.hero-slider-one .slick-dots li .slick-active button{
+.hero-slider-one .slick-dots li.slick-active button{
      background-color : #80bb01;
 }
 
