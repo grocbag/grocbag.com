@@ -1580,137 +1580,48 @@ a.single-sale-add-to-cart-btn {
       animation-delay: 3s; }
 
 /*----------  Code for Slider dots from Has Themes ----------*/
- .hero-slider-one .slick-dots 
-     {
-      position: absolute;
-      bottom: 20px;
-      left: 50%;
-    -webkit-transform: translateX (-50%);
-    -ms-transform: translateX (-50%);
-    transform : translateX (-50%);
-    }
-    @media only screen and (max-width: 767px ) {
-    .hero-slider-one .slick-dots 
-     {
-    bottom
-     : 
-     15px
-     ;
-         
-     }
-    
-     }
-     .
-     hero-slider-one 
-     .
-     slick-dots 
-     li 
-     {
-    display
-     : 
-     inline-block
-     ;
-         }
-    .
-     hero-slider-one 
-     .
-     slick-dots 
-     li
-     .
-     slick-active 
-     button 
-     {
-    
- 
-     background-color
-     : 
-     #80bb01;
-    
-    }
-    
-     .
-     hero-slider-one 
-     .
-     slick-dots 
-     li 
-     button 
-     {
-    
-     background
-     : 
-     none
-     ;
-    
-     border
-     : 
-     none
-     ;
-    
-     font-size
-     : 
-     0
-     ;
-    
-     width
-     : 
-     15px
-     ;
-         
-     height
-     : 
-     15px
-     ;
-     border-radius
-     : 
-     50%
-     ;
-     background-color
-     : 
-     #ddd;
-     margin-left
-     : 
-     10px
-     ;
-     }
+ .hero-slider-one .slick-dots{
+     position : absolute;
+     bottom : 20px;
+     left : 50%;
+     -webkit-transform : translateX ( -50% );
+     -ms-transform : translateX ( -50% );
+     transform : translateX ( -50% );
+}
 
-     @media 
-     only 
-     screen 
-     and 
-     (
-     max-width
-     : 
-     767px
-     ) 
-     {
-     .
-     hero-slider-one 
-     .
-     slick-dots 
-     li 
-     button 
-     {
-     width
-     : 
-     12px
-     ;
-     height
-     : 
-     12px
-     ;
-     margin-left
-     : 
-     8px
-     ;
+@media only screen and (max-width : 767px){
+     .hero-slider-one .slick-dots{
+         bottom : 15px;
      }
-    
+}
 
-    
+.hero-slider-one .slick-dots li{
+     display : inline-block;
+}
 
+.hero-slider-one .slick-dots li .slick-active button{
+     background-color : #80bb01;
+}
+
+.hero-slider-one .slick-dots li button{
+     background : none;
+     border : none;
+     font-size : 0;
+     width : 15px;
+     height : 15px;
+     border-radius : 50%;
+     background-color : #ddd;
+     margin-left : 10px;
+}
+
+@media only screen and (max-width : 767px){
+     .hero-slider-one .slick-dots li button{
+         width : 12px;
+         height : 12px;
+         margin-left : 8px;
      }
-    
-
-    
+}
+   
 
 /*----------  04.2 Hero Two  ----------*/
 .hero-slider-two {
