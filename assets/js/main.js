@@ -814,7 +814,7 @@
 			language: 'en',
 			callback: mailChimpResponse,
 		// ADD YOUR MAILCHIMP URL BELOW HERE!
-		url: 'http://grocbag.us3.list-manage.com/subscribe?u=894778af70c894e48b4b6475a&id=3812402ccb'
+		url: 'https://grocbag.us3.list-manage.com/subscribe/post?u=894778af70c894e48b4b6475a&amp;id=3812402ccb'
 			
 	});
 
