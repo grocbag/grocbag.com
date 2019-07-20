@@ -827,11 +827,13 @@
 			} else if (resp.result === 'error') {
 				$('.mailchimp-error').html('' + resp.msg).fadeIn(900);
 			}
+			// clear subscription form
+         
+    			$("#mc-form input").val('');
 		}
 
 
-
-		/*---------------------
+			/*---------------------
 			Category Menu
 			------------------------*/
 
