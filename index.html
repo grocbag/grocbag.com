@@ -70,8 +70,29 @@
 
 						<div class="header-top-menu">
 							<ul>
-								<li><a href="#contact">Log In/Sign Up</a></li>
+								<li><a href="#" onclick="openForm()">Register</a></li>
 							</ul>
+
+							
+							<div class="form-popup" id="myForm">
+								<form  action="/action_page.php" class="form-container" id="mc-form">
+									<h4 align="left"><img src="assets/images/logoSmall.png"> &nbsp; &nbsp; Register with us</h4> 
+									<input type="email" id="mc-email" autocomplete="off" placeholder="Your email address">
+									<input type="text" id="mc-fname" autocomplete="off" placeholder="Your Name">
+									<input type="text" id="mc-phone" autocomplete="off" placeholder="Your Phone Number"> 
+									<button id="mc-submit" class="btn" type="submit">REGISTER</button>
+									<button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+								</form>
+								
+								<!-- mailchimp-alerts Start -->
+								<div class="mailchimp-alerts1" style="background-color: white">
+									<div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
+									<div class="mailchimp-success"></div><!-- mailchimp-success end -->
+									<div class="mailchimp-error"></div><!-- mailchimp-error end -->
+								</div><!-- mailchimp-alerts end -->
+								
+							</div>
+
 						</div>
 
 					</div>
