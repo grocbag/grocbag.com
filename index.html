@@ -33,6 +33,43 @@
 	<!-- Modernizer JS -->
 	<script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/ 
+              jquery/3.3.1/jquery.min.js"></script>  -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		function update_prices(){
+		var price_map = {
+			"potato": "₹15.50",
+			"onion": "₹48.00",
+			"tomato": "₹20.00",
+			"capsicum": "₹30.00/₹140.00",
+			"cauliflower": "₹18.00",
+			"cabbage": "₹16.00",
+			"boroccoli": "₹68.00",
+			"spinach": "₹20.00",
+			"apples": "₹75.00",
+			"banana": "₹39.00"
+		}
+
+		$("span.potato-price").text(price_map["potato"])
+		$("span.onion-price").text(price_map["onion"])
+		$("span.tomato-price").text(price_map["tomato"])
+		$("span.capsicum-price").text(price_map["capsicum"])
+		$("span.cauliflower-price").text(price_map["cauliflower"])
+		$("span.cabbage-price").text(price_map["cabbage"])
+		$("span.boroccoli-price").text(price_map["boroccoli"])
+		$("span.spinach-price").text(price_map["spinach"])
+		$("span.apples-price").text(price_map["apples"])
+		$("span.boroccoli-price").text(price_map["boroccoli"])
+		$("span.banana-price").text(price_map["banana"])
+	}
+		$(document).ready(function(){
+			$("button.slick-next, button.slick-prev").click(function() {
+				console.log( "Updating prices." );
+				update_prices()
+			})
+		});
+	</script>
 </head>
 
 <body>
@@ -447,7 +484,7 @@
 	=            Tab slider         =
 	=============================================-->
 	
-	<div class="slider tab-slider mb-35">
+	<div class="slider tab-slider mb-35" id="track_slider-content">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -488,7 +525,7 @@
 												<h3 class="product-title"><a href="/">Fresh Potato sourced direct from farms</a></h3>
 												<div class="price-box">
 												<!--	<span class="main-price"> ₹89.00</span>  -->
-													<span class="discounted-price"> ₹15.50</span>
+													<span class="discounted-price potato-price"></span>
 												</div>
 											</div>
 											
@@ -517,7 +554,7 @@
 												</div>
 												<h3 class="product-title"><a href="/">Red Onion sourced from farmers in Nashik</a></h3>
 												<div class="price-box">
-													<span class="discounted-price">₹48.00</span>
+													<span class="discounted-price onion-price"></span>
 												</div>
 											</div>
 										</div>
@@ -550,7 +587,7 @@
 												</div>
 												<h3 class="product-title"><a href="/">Both Hybrid and Desi varities available</a></h3>
 												<div class="price-box">
-													<span class="discounted-price">₹20.00</span>
+													<span class="discounted-price tomato-price"></span>
 												</div>
 											</div>
 										</div>
@@ -580,7 +617,7 @@
 												<h3 class="product-title"><a href="/">Capsicum and Bell Peppers from our farms in MP</a></h3>
 												<div class="price-box">
 												<!--	<span class="main-price">$89.00</span>    -->
-													<span class="discounted-price">₹30.00/₹140.00</span>
+													<span class="discounted-price capsicum-price"></span>
 												</div>
 											</div>
 										</div>
@@ -615,7 +652,7 @@
 												<h3 class="product-title"><a href="/">High quality Cauliflower sourced from UP & Haryana</a></h3>
 												<div class="price-box">
 												<!--	<span class="main-price">₹15.00</span>       -->
-													<span class="discounted-price">₹18.00</span>
+													<span class="discounted-price cauliflower-price"></span>
 												</div>
 											</div>
 										</div>
@@ -643,7 +680,7 @@
 												</div>
 												<h3 class="product-title"><a href="/">High quality Cabbage sourced from UP & Haryana</a></h3>
 												<div class="price-box">
-													<span class="discounted-price">₹16.00</span>
+													<span class="discounted-price cabbage-price"></span>
 												</div>
 											</div>
 										</div>
@@ -677,7 +714,7 @@
 												<h3 class="product-title"><a href="/">Tasty and Rich in dozen of nutrients</a></h3>
 												<div class="price-box">
 												<!--	<span class="main-price">$89.00</span>  -->
-													<span class="discounted-price">₹68.00</span>
+													<span class="discounted-price boroccoli-price"></span>
 												</div>
 											</div>
 										</div>
@@ -707,7 +744,7 @@
 												<h3 class="product-title"><a href="/">Green and Leafy Farm-Fresh Spinach</a></h3>
 												<div class="price-box">
 												<!--	<span class="main-price">$89.00</span>   -->
-													<span class="discounted-price">₹20.00</span>
+													<span class="discounted-price spinach-price"></span>
 												</div>
 											</div>
 										</div>
@@ -742,7 +779,7 @@
 												<h3 class="product-title"><a href="/">Red juicy Apples handpicked from orchards in HP</a></h3>
 												<div class="price-box">
 												<!--	<span class="main-price">$89.00</span> -->
-													<span class="discounted-price">₹75.00</span>
+													<span class="discounted-price apples-price"></span>
 												</div>
 											</div>
 										</div>
@@ -772,7 +809,7 @@
 												<h3 class="product-title"><a href="/">Fresh Banana sourced from high quality farms</a></h3>
 												<div class="price-box">
 												<!--	<span class="main-price">$89.00</span>   -->
-													<span class="discounted-price">₹39.00</span>
+													<span class="discounted-price banana-price"></span>
 												</div>
 											</div>
 										</div>
@@ -1275,7 +1312,14 @@ function closeForm() {
 }
 
 </script>
-	
+
+<!--
+	This below script needs to be in the end because the prices will be updated once the HTML DOM is fully loaded
+-->
+<script>
+	update_prices()
+</script>
+
 </body>
 
 </html>
